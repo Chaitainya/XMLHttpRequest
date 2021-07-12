@@ -1,0 +1,12 @@
+IIFE:
+
+Immediately Invoked Function Expression
+
+Syntax:
+
+   (function(){
+
+   })
+
+1. It means we no need to call the function, it will automatically invokes once.
+2. But it will only invokes once.
