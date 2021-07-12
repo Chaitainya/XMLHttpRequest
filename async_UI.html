@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XMLHttpRequest</title>
+  </head>
+  <body>
+    <p id="emp"></p>
+    <script>
+      (function () {
+        var http = new XMLHttpRequest();
+
+        http.open("GET", "config.json");
+
+        http.send();
+
+        http.onreadystatechange = function () {
+          //   console.log(http.responseText);
+          document.getElementById("emp").innerHTML = http.responseText;
+        };
+      })();
+    </script>
+  </body>
+</html>
